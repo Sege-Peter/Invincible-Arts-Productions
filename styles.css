@@ -1,0 +1,10 @@
+/* Move inline animation-duration here */
+.hero-bg-long {
+  /* keep the bounce timing that was inline */
+  animation-duration: 15s;
+}
+
+/* optional: ensure menu hidden state aligns with aria-hidden if needed */
+#menu[aria-hidden="true"] {
+  display: none;
+}

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Local stylesheet for moved inline styles -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+ 
+  <!-- Title & Description -->
+  <title>Invincible Arts Production | Creative Video, Design & Events in Kisumu, Kenya</title>
+  <meta name="description" content="Invincible Arts Production offers professional video production, event coverage, and creative design services in Kisumu, Kenya. Request a free quote today!">
+
+  <!-- Keywords -->
+  <meta name="keywords" content="Video production Kisumu, Event coverage Kenya, Creative design services, Invincible Arts Production, Graphic design, Media services Kenya">
+
+  <!-- Author -->
+  <meta name="author" content="Invincible Arts Production">
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (Social Media Preview) -->
+  <meta property="og:title" content="Invincible Arts Production | Creative Video & Events in Kenya">
+  <meta property="og:description" content="We specialize in video production, event coverage, and creative design services in Kisumu, Kenya.">
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Invincible Arts Production | Creative Video & Design in Kenya">
+  <meta name="twitter:description" content="Professional video production, event coverage, and design services in Kisumu.">
+  <meta name="twitter:image" content="https://yourdomain.com/preview.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-blue-900 text-white shadow-lg z-50 transition-all duration-500">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <!-- Logo -->
+      <a href="#" class="text-2xl font-bold text-red-500 flex items-center">
+        <img src="https://placehold.co/40x40/red/white?text=IA" alt="Invincible Arts Logo" class="mr-2 rounded-full animate-pulse">
+        Invincible Arts
+      </a>
+      
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-red-400 transition-colors duration-300">Home</a>
+        <a href="#about" class="hover:text-red-400 transition-colors duration-300">About</a>
+        <a href="#services" class="hover:text-red-400 transition-colors duration-300">Services</a>
+        <a href="#portfolio" class="hover:text-red-400 transition-colors duration-300">Portfolio</a>
+        <a href="#testimonials" class="hover:text-red-400 transition-colors duration-300">Testimonials</a>
+        <a href="#contact" class="hover:text-red-400 transition-colors duration-300">Contact</a>
+      </nav>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" type="button" title="Toggle navigation menu" aria-label="Toggle navigation menu" aria-expanded="false" class="md:hidden flex flex-col space-y-1.5 justify-center items-center w-8 h-8">
+        <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all duration-300"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="menu" class="hidden md:hidden bg-blue-800 transition-all duration-500 transform origin-top" aria-hidden="true">
+      <nav class="flex flex-col space-y-4 py-4 px-6">
+        <a href="#home" class="hover:text-red-400 transition-colors duration-300 py-2">Home</a>
+        <a href="#about" class="hover:text-red-400 transition-colors duration-300 py-2">About</a>
+        <a href="#services" class="hover:text-red-400 transition-colors duration-300 py-2">Services</a>
+        <a href="#portfolio" class="hover:text-red-400 transition-colors duration-300 py-2">Portfolio</a>
+        <a href="#testimonials" class="hover:text-red-400 transition-colors duration-300 py-2">Testimonials</a>
+        <a href="#contact" class="hover:text-red-400 transition-colors duration-300 py-2">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<!-- Hero Section -->
+<section id="home" class="h-screen flex items-center justify-center text-white text-center px-6 relative overflow-hidden">
+  
+  <!-- Background Image Slider -->
+  <div class="absolute inset-0 z-0">
+    <div class="w-full h-full bg-cover bg-center absolute slider-bg transition-all duration-1000"></div>
+  </div>
+
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-900/80 to-red-600/80 z-0"></div>
+
+  <!-- Animated background elements -->
+  <div class="absolute inset-0 z-0">
+    <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-red-500 rounded-full mix-blend-overlay filter blur-xl opacity-20 animate-pulse"></div>
+    <div class="absolute bottom-1/3 right-1/4 w-96 h-96 bg-blue-500 rounded-full mix-blend-overlay filter blur-xl opacity-20 animate-bounce delay-1000 hero-bg-long"></div>
+  </div>
+  
+  <!-- Hero Content -->
+  <div class="z-10 animate__animated animate__fadeInUp">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">Invincible Arts Production</h1>
+    <p class="text-xl mb-8">Events • Media Coverage • Creative Designs</p>
+    <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <a href="#services" class="bg-red-500 px-8 py-3 rounded-full font-semibold hover:bg-red-600 transition transform hover:scale-105 shadow-lg">
+        Explore Services
+      </a>
+      <a href="#portfolio" class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-900 transition transform hover:scale-105">
+        View Portfolio
+      </a>
+      <button id="quoteBtn" type="button" class="bg-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition transform hover:scale-105 shadow-lg">
+        Request Quote
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- Quote Popup Modal -->
+<div id="quoteModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center hidden z-50">
+  <div class="bg-white rounded-xl p-8 max-w-lg w-full shadow-lg animate__animated animate__fadeInUp relative">
+    <h3 class="text-2xl font-bold text-blue-900 mb-4">Request a Quote</h3>
+    <p class="mb-4 text-gray-600">Select your service to get an instant estimate in KES (Kenyan Shillings).</p>
+    
+    <!-- Service Selection -->
+    <label for="serviceSelect" class="block mb-2 font-semibold">Choose Service:</label>
+    <select id="serviceSelect" class="w-full p-3 border rounded-lg mb-4">
+      <option value="2500">Event Coverage – KES 2,500</option>
+      <option value="15000">Video Production – KES 15,000</option>
+      <option value="1500">Design Package – KES 1,500</option>
+      <option value="20000">Full Package (All-in-One) – KES 20,000</option>
+    </select>
+
+    <!-- Quantity -->
+    <label for="quantityInput" class="block mb-2 font-semibold">Number of Hours / Units:</label>
+    <input type="number" id="quantityInput" placeholder="1" class="w-full p-3 border rounded-lg mb-4" value="1" min="1">
+
+    <!-- Quote Output -->
+    <p class="text-lg font-bold mb-4">
+      Estimated Quote: <span id="quoteResult" class="text-red-500">KES 2,500</span>
+    </p>
+
+    <!-- Buttons -->
+    <div class="flex justify-end gap-4">
+      <button id="closeQuote" type="button" class="px-6 py-2 bg-gray-400 rounded-lg hover:bg-gray-500 text-white">Cancel</button>
+      <button id="calcQuote" type="button" class="px-6 py-2 bg-blue-900 rounded-lg hover:bg-blue-700 text-white">Calculate</button>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+  // ========== Gallery Slider ==========
+  const gallery = document.getElementById("gallerySlider");
+  if (gallery) {
+    const images = gallery.children.length;
+    let index = 0;
+
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+
+    if (nextBtn && prevBtn) {
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % images;
+        gallery.style.transform = `translateX(-${index * 100}%)`;
+      });
+
+      prevBtn.addEventListener("click", () => {
+        index = (index - 1 + images) % images;
+        gallery.style.transform = `translateX(-${index * 100}%)`;
+      });
+    }
+
+    // Auto slider every 4s
+    setInterval(() => {
+      index = (index + 1) % images;
+      gallery.style.transform = `translateX(-${index * 100}%)`;
+    }, 4000);
+  }
+
+  // ========== Quote Modal ==========
+  const modal = document.getElementById("quoteModal");
+  const openBtn = document.getElementById("quoteBtn");
+  const closeBtn = document.getElementById("closeQuote");
+  const calcBtn = document.getElementById("calcQuote");
+  const serviceSelect = document.getElementById("serviceSelect");
+  const quantityInput = document.getElementById("quantityInput");
+  const result = document.getElementById("quoteResult");
+
+  // Open modal
+  openBtn?.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+    serviceSelect.focus();
+    updateQuote();
+  });
+
+  // Close modal
+  function closeModal() {
+    modal.classList.add("hidden");
+  }
+  closeBtn?.addEventListener("click", closeModal);
+
+  // Close on background click
+  modal?.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  // Close on ESC key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+      closeModal();
+    }
+  });
+
+  // Calculate Quote
+  function updateQuote() {
+    const service = parseInt(serviceSelect.value);
+    const qty = parseInt(quantityInput.value) || 1;
+    const total = service * qty;
+    result.textContent = `KES ${total.toLocaleString()}`;
+  }
+
+  calcBtn?.addEventListener("click", updateQuote);
+  serviceSelect?.addEventListener("change", updateQuote);
+  quantityInput?.addEventListener("input", updateQuote);
+
+  // Initialize default quote
+  updateQuote();
+</script>
+
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a href="#about" class="text-white text-4xl" title="Scroll to About" aria-label="Scroll to About">
+        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 container mx-auto px-6 scroll-mt-16">
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6">About Us</h2>
+        <p class="text-lg leading-relaxed mb-6">
+          At <span class="text-red-500 font-semibold">Invincible Arts Production</span>, we believe in the power of art to inspire, connect, and transform. 
+          Our team of event managers, designers, and media creatives is dedicated to providing professional solutions that leave a lasting impression.
+        </p>
+        <div class="grid grid-cols-2 gap-6 mt-8">
+          <div class="flex items-center">
+            <div class="bg-blue-100 p-3 rounded-full mr-3">
+              <i class="fas fa-medal text-blue-600 text-xl"></i>
+            </div>
+            <span>Award-winning team</span>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-blue-100 p-3 rounded-full mr-3">
+              <i class="fas fa-calendar-check text-blue-600 text-xl"></i>
+            </div>
+            <span>200+ Events</span>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-blue-100 p-3 rounded-full mr-3">
+              <i class="fas fa-camera text-blue-600 text-xl"></i>
+            </div>
+            <span>Professional equipment</span>
+          </div>
+          <div class="flex items-center">
+            <div class="bg-blue-100 p-3 rounded-full mr-3">
+              <i class="fas fa-smile text-blue-600 text-xl"></i>
+            </div>
+            <span>100% Client satisfaction</span>
+          </div>
+        </div>
+      </div>
+    <div class="md:w-1/2 relative overflow-hidden rounded-xl shadow-xl">
+  <!-- Slider wrapper -->
+  <div id="teamSlider" class="relative w-full h-[450px] overflow-hidden rounded-xl flex items-center justify-center bg-gray-100">
+    <!-- Slides -->
+    <div class="absolute inset-0 slider-item opacity-100 transition-opacity duration-1000 ease-in-out flex items-center justify-center">
+      <img src="harry (5).jpeg" alt="Team 1" class="h-full object-contain rounded-xl shadow-lg">
+    </div>
+
+    <div class="absolute inset-0 slider-item opacity-0 transition-opacity duration-1000 ease-in-out flex items-center justify-center">
+      <img src="harry (1).jpeg" alt="Team 2" class="h-full object-contain rounded-xl shadow-lg">
+    </div>
+
+    <div class="absolute inset-0 slider-item opacity-0 transition-opacity duration-1000 ease-in-out flex items-center justify-center">
+      <img src="harry (2).jpeg" alt="Team 3" class="h-full object-contain rounded-xl shadow-lg">
+    </div>
+
+    <div class="absolute inset-0 slider-item opacity-0 transition-opacity duration-1000 ease-in-out flex items-center justify-center">
+      <img src="harry (3).jpeg" alt="Team 4" class="h-full object-contain rounded-xl shadow-lg">
+    </div>
+
+    <div class="absolute inset-0 slider-item opacity-0 transition-opacity duration-1000 ease-in-out flex items-center justify-center">
+      <img src="harry (4).jpeg" alt="Team 5" class="h-full object-contain rounded-xl shadow-lg">
+    </div>
+  </div>
+
+  <!-- Decorative blocks -->
+  <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-red-500 rounded-xl -z-10 animate-bounce"></div>
+  <div class="absolute -top-6 -right-6 w-24 h-24 bg-blue-500 rounded-xl -z-10 animate-pulse"></div>
+</div>
+
+<script>
+  // Simple image slider
+  const slides = document.querySelectorAll('#teamSlider .slider-item');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? '1' : '0';
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }
+
+  // Init slider
+  showSlide(currentSlide);
+  setInterval(nextSlide, 4000); // Change every 4 seconds
+</script>
+
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20 bg-gray-100 scroll-mt-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-blue-900 mb-4 text-center">Our Services</h2>
+      <p class="text-lg text-center mb-12 max-w-2xl mx-auto">We offer comprehensive creative solutions for events, media production, and design needs.</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 group">
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-red-100 transition-colors">
+            <i class="fas fa-calendar-alt text-blue-600 text-2xl group-hover:text-red-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-red-500 mb-4">Events Management</h3>
+          <p class="mb-4">Planning, coordination, and professional coverage of events with photography, videography, and live streaming.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center"><i class="fas fa-check-circle text-red-500 mr-2"></i> Corporate Events</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-red-500 mr-2"></i> Weddings</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-red-500 mr-2"></i> Conferences</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 group">
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-red-100 transition-colors">
+            <i class="fas fa-video text-blue-600 text-2xl group-hover:text-red-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-red-500 mb-4">Media Productions</h3>
+          <p class="mb-4">Documentaries, music videos, commercials, drone shots, editing, and post-production.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center"><i class="fas fa-check-circle text-red-500 mr-2"></i> Video Production</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-red-500 mr-2"></i> Aerial Photography</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-red-500 mr-2"></i> Post-Production</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2 group">
+          <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:bg-red-100 transition-colors">
+            <i class="fas fa-paint-brush text-blue-600 text-2xl group-hover:text-red-600"></i>
+          </div>
+          <h3 class="text-xl font-bold text-red-500 mb-4">Creative Designs</h3>
+          <p class="mb-4">Logos, posters, social media content, animations, and branding materials that speak volumes.</p>
+          <ul class="space-y-2">
+            <li class="flex items-center"><i class="fas fa-check-circle text-red-500 mr-2"></i> Brand Identity</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-red-500 mr-2"></i> Marketing Materials</li>
+            <li class="flex items-center"><i class="fas fa-check-circle text-red-500 mr-2"></i> Social Media Graphics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-20 container mx-auto px-6 scroll-mt-16">
+    <h2 class="text-3xl font-bold text-blue-900 mb-4 text-center">Our Portfolio</h2>
+    <p class="text-lg text-center mb-10 max-w-2xl mx-auto">A glimpse of the projects we've brought to life, from events to creative campaigns.</p>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="portfolio-item relative overflow-hidden rounded-xl group">
+        <img src="gallery (3).jpeg" 
+             alt="Corporate Event" class="w-full h-64 object-cover transition duration-700 group-hover:scale-110">
+        <div class="portfolio-overlay absolute inset-0 bg-blue-900 bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+          <h3 class="text-xl font-bold mb-2">Corporate Conference</h3>
+          <p>Full event management and media coverage</p>
+        </div>
+      </div>
+      
+      <div class="portfolio-item relative overflow-hidden rounded-xl group">
+        <img src="Gallery (2).jpeg" 
+             alt="Music Video" class="w-full h-64 object-cover transition duration-700 group-hover:scale-110">
+        <div class="portfolio-overlay absolute inset-0 bg-blue-900 bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+          <h3 class="text-xl font-bold mb-2">Music Video Production</h3>
+          <p>Cinematic music video with drone footage</p>
+        </div>
+      </div>
+      
+      <div class="portfolio-item relative overflow-hidden rounded-xl group">
+        <img src="Graphic Design (Advert) Flyer Design.jpeg" 
+             alt="Brand Design" class="w-full h-64 object-cover transition duration-700 group-hover:scale-110">
+        <div class="portfolio-overlay absolute inset-0 bg-blue-900 bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+          <h3 class="text-xl font-bold mb-2">Brand Identity Design</h3>
+          <p>Complete branding for a tech startup</p>
+        </div>
+      </div>
+      
+      <div class="portfolio-item relative overflow-hidden rounded-xl group">
+        <img src="Gallery (6).jpeg" 
+             alt="Wedding" class="w-full h-64 object-cover transition duration-700 group-hover:scale-110">
+        <div class="portfolio-overlay absolute inset-0 bg-blue-900 bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+          <h3 class="text-xl font-bold mb-2">Wedding Coverage</h3>
+          <p>Photography and videography for a beautiful wedding</p>
+        </div>
+      </div>
+      
+      <div class="portfolio-item relative overflow-hidden rounded-xl group">
+        <img src="gallery (7).jpeg" 
+             alt="Commercial" class="w-full h-64 object-cover transition duration-700 group-hover:scale-110">
+        <div class="portfolio-overlay absolute inset-0 bg-blue-900 bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+          <h3 class="text-xl font-bold mb-2">TV Commercial</h3>
+          <p>30-second spot for a national brand</p>
+        </div>
+      </div>
+      
+      <div class="portfolio-item relative overflow-hidden rounded-xl group">
+        <img src="gallery (1).jpeg" 
+             alt="Social Media" class="w-full h-64 object-cover transition duration-700 group-hover:scale-110">
+        <div class="portfolio-overlay absolute inset-0 bg-blue-900 bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
+          <h3 class="text-xl font-bold mb-2">Social Media Campaign</h3>
+          <p>30-day content strategy and execution</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-12">
+      <a href="#" class="inline-flex items-center text-red-500 font-semibold hover:text-red-700">
+        View Full Portfolio
+        <i class="fas fa-arrow-right ml-2"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 bg-blue-900 text-white scroll-mt-16">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-12 text-center">What Our Clients Say</h2>
+      
+      <div class="testimonial-slider relative">
+        <div class="testimonial active opacity-100 transition-opacity duration-500">
+          <div class="bg-blue-800 bg-opacity-50 p-8 rounded-xl max-w-3xl mx-auto">
+            <div class="flex items-center mb-6">
+              <div class="w-16 h-16 rounded-full overflow-hidden mr-4 border-2 border-red-500">
+                <img src="skope.jpg" 
+                     alt="Client" class="w-full h-full object-cover">
+              </div>
+              <div>
+                <h4 class="font-bold">Eng Skope</h4>
+                <p class="text-blue-200">CEO, Skope<strong>SANA</strong></p>
+              </div>
+            </div>
+            <p class="text-lg italic">
+              "Invincible Arts transformed our annual conference into an unforgettable experience. Their attention to detail and creative approach exceeded our expectations. The after-event video went viral in our industry!"
+            </p>
+            <div class="flex mt-4">
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+              <i class="fas fa-star text-yellow-400"></i>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Testimonial navigation would go here in a real implementation -->
+      </div>
+      
+      <div class="flex justify-center mt-8 space-x-12">
+        <div class="text-center">
+          <div class="text-4xl font-bold text-red-500 mb-2">200+</div>
+          <div class="text-blue-200">Events Managed</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-red-500 mb-2">98%</div>
+          <div class="text-blue-200">Client Satisfaction</div>
+        </div>
+        <div class="text-center">
+          <div class="text-4xl font-bold text-red-500 mb-2">15</div>
+          <div class="text-blue-200">Awards Won</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Contact -->
+<section id="contact" class="py-20 bg-gray-100 scroll-mt-16">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row gap-12">
+      
+      <!-- Contact Info -->
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold text-blue-900 mb-6">Contact Us</h2>
+        <p class="mb-6">Let's create something unforgettable together. Reach out today.</p>
+        
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="bg-blue-100 p-3 rounded-full mr-4">
+              <i class="fas fa-map-marker-alt text-blue-600"></i>
+            </div>
+            <div>
+              <h4 class="font-bold">Address</h4>
+              <p>Kisumu<br>Kenya</p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="bg-blue-100 p-3 rounded-full mr-4">
+              <i class="fas fa-phone text-blue-600"></i>
+            </div>
+            <div>
+              <h4 class="font-bold">Phone</h4>
+              <p><a href="tel:+254716168875" class="hover:underline">+254 716 168 875</a></p>
+            </div>
+          </div>
+          
+          <div class="flex items-start">
+            <div class="bg-blue-100 p-3 rounded-full mr-4">
+              <i class="fas fa-envelope text-blue-600"></i>
+            </div>
+            <div>
+              <h4 class="font-bold">Email</h4>
+              <p><a href="mailto:invincibleartsproduction@gmail.com" class="hover:underline">invincibleartsproduction@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Social Links -->
+        <div class="flex space-x-4 mt-8">
+          <a href="#" class="bg-blue-600 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-700 transition" title="Facebook" aria-label="Facebook">
+            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="bg-blue-400 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-500 transition" title="Twitter" aria-label="Twitter">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="bg-pink-600 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-pink-700 transition" title="Instagram" aria-label="Instagram">
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="bg-blue-700 text-white p-3 rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-800 transition" title="LinkedIn" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Contact Form -->
+<div class="md:w-1/2">
+  <form action="https://api.web3forms.com/submit" method="POST" class="grid gap-6 bg-white p-8 rounded-xl shadow-md">
+
+    <!-- Web3Forms Access Key -->
+    <input type="hidden" name="access_key" value="643a72a8-933e-4a3c-9fff-492ff1a8cdb8">
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+    <!-- Inputs -->
+    <input type="text" name="name" placeholder="Your Name" 
+      class="p-4 border rounded-lg w-full focus:ring-2 focus:ring-red-400 focus:border-transparent transition" required>
+
+    <input type="email" name="email" placeholder="Your Email" 
+      class="p-4 border rounded-lg w-full focus:ring-2 focus:ring-red-400 focus:border-transparent transition" required>
+
+    <input type="text" name="subject" placeholder="Subject" 
+      class="p-4 border rounded-lg w-full focus:ring-2 focus:ring-red-400 focus:border-transparent transition" required>
+
+    <textarea name="message" placeholder="Your Message" 
+      class="p-4 border rounded-lg w-full h-40 focus:ring-2 focus:ring-red-400 focus:border-transparent transition" required></textarea>
+
+    <!-- Custom redirect (optional) -->
+    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+
+    <!-- Submit Button -->
+    <button type="submit" 
+      class="bg-red-500 text-white font-semibold py-4 px-6 rounded-lg hover:bg-red-600 transition transform hover:scale-105">
+      Send Message
+    </button>
+  </form>
+</div>
+
+    </div>
+
+    <!-- Google Map Embed -->
+    <div class="mt-12">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127649.81717040293!2d34.65307132240677!3d-0.09170125201562374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa5d2e92afecb%3A0x68d27021979fd4b5!2sKisumu!5e0!3m2!1sen!2ske!4v1695123456789" 
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        class="rounded-xl shadow-md">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+   <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-12 relative overflow-hidden animate__animated animate__fadeInUp">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <!-- About -->
+        <div>
+          <h3 class="text-xl font-bold text-red-500 mb-4">Invincible Arts</h3>
+          <p>Creating unforgettable experiences through exceptional event management, media production, and design.</p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-red-400 transition">Home</a></li>
+            <li><a href="#about" class="hover:text-red-400 transition">About</a></li>
+            <li><a href="#services" class="hover:text-red-400 transition">Services</a></li>
+            <li><a href="#portfolio" class="hover:text-red-400 transition">Portfolio</a></li>
+            <li><a href="#contact" class="hover:text-red-400 transition">Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Services -->
+        <div>
+          <h4 class="text-lg font-bold mb-4">Services</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-red-400 transition">Events Management</a></li>
+            <li><a href="#" class="hover:text-red-400 transition">Media Production</a></li>
+            <li><a href="#" class="hover:text-red-400 transition">Creative Design</a></li>
+            <li><a href="#" class="hover:text-red-400 transition">Photography</a></li>
+            <li><a href="#" class="hover:text-red-400 transition">Videography</a></li>
+          </ul>
+        </div>
+        
+        <!-- Newsletter -->
+        <div>
+          <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+          <p class="mb-4">Subscribe to our newsletter for updates and offers.</p>
+          <form class="flex">
+            <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full text-gray-800" required>
+            <button type="submit" class="bg-red-500 px-4 py-2 rounded-r-lg hover:bg-red-600 transition" title="Subscribe to newsletter" aria-label="Subscribe to newsletter">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <!-- Bottom Footer -->
+      <div class="border-t border-blue-800 mt-8 pt-8 text-center">
+        <p>© <span id="year"></span> Invincible Arts Production. All rights reserved.</p>
+        <p class="mt-2 text-sm">Website by 
+          <a href="https://www.skopedesigns.co.ke" target="_blank" class="text-red-400 hover:underline">
+            Skope Designs
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Footer Year + Animations -->
+  <script>
+    // Dynamic Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Background slider
+    const sliderBg = document.querySelector(".slider-bg");
+    const images = [
+      "Gallery (1).jpeg",
+      "Gallery (2).jpeg",
+      "Gallery (3).jpeg",
+      "Gallery (4).jpeg",
+      "Gallery (5).jpeg",
+      "Gallery (6).jpeg",
+      "Gallery (7).jpeg"
+    ];
+    let current = 0;
+    function changeBackground() {
+      sliderBg.style.backgroundImage = `url('${images[current]}')`;
+      current = (current + 1) % images.length;
+    }
+    changeBackground();
+    setInterval(changeBackground, 5000); // Change every 5s
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+    menuBtn.addEventListener("click", () => {
+      const isHidden = menu.classList.contains('hidden');
+      menu.classList.toggle("hidden");
+      menuBtn.classList.toggle("open");
+      menuBtn.setAttribute('aria-expanded', String(isHidden));
+      menu.setAttribute('aria-hidden', String(!isHidden));
+    });
+    document.querySelectorAll('#menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        menuBtn.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
+        menu.setAttribute('aria-hidden', 'true');
+      });
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('shadow-lg', 'py-2');
+        header.classList.remove('py-4');
+      } else {
+        header.classList.remove('shadow-lg', 'py-2');
+        header.classList.add('py-4');
+      }
+    });
+
+    // GSAP animations on scroll
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.portfolio-item, .service-card').forEach(item => {
+      gsap.fromTo(item, 
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          scrollTrigger: {
+            trigger: item,
+            start: 'top 85%',
+            toggleActions: 'play none none none'
+          }
+        }
+      );
+    });
+  </script>
+</body>
+</html>
